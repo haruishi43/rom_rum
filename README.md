@@ -20,3 +20,4 @@ TODO:
 - [ ] Multi-class function (currently binary evaluation function; I just iterate through all the classes)
 - [x] Add test code
 - [ ] Add better tests
+- [ ] More Efficient Implementation
