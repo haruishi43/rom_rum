@@ -35,6 +35,9 @@ def ROM(gt, pred):
     num_gt_regions = len(np.unique(gt_regions)) - 1
     num_pred_regions = len(np.unique(pred_regions)) - 1
 
+    if num_gt_regions == 0 or num_pred_regions == 0:
+        return 0
+
     # count over-segmentation
     num_gt_os = 0
     num_pred_os = 0
@@ -83,6 +86,9 @@ def RUM(gt, pred):
     # number of contiguous regions
     num_gt_regions = len(np.unique(gt_regions)) - 1
     num_pred_regions = len(np.unique(pred_regions)) - 1
+
+    if num_gt_regions == 0 or num_pred_regions == 0:
+        return 0
 
     # count under-segmentation
     num_gt_us = 0
