@@ -1,0 +1,18 @@
+[project]
+name = "rom-rum"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8.16"
+dependencies = [
+    "jupyterlab>=4.3.8",
+    "matplotlib>=3.7.5",
+    "numpy<2.0",
+    "pillow>=10.4.0",
+    "scikit-image>=0.21.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
